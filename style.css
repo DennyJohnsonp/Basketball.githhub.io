@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    background-image: url("clck.gif");
+    background-size: 100% auto;
+    background-blend-mode: lighten;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.digit {
+    width: 200px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 1px;
+}
+
+.digit div {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(96, 91, 91);
+    opacity: 0.1;
+}
+
+.digit .on {
+    background-color:red;
+    opacity: 5;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
